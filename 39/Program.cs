@@ -20,6 +20,7 @@ int SumOddPositions(int[] a)
     }
     return s;
 }
+
 void PrintTo(int[] a)
 {
     for (int i = 0; i < a.Length; i++)
