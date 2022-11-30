@@ -24,7 +24,7 @@ int BinSearch(int[] a,int find)
     while(a[i]!=find && left<right)
     {
           if (find>a[i])  
-              left=i;
+            left=i+1;
           else
             right=i;
         i=left+(right-left)/2;
