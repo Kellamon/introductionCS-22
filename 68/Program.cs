@@ -26,8 +26,8 @@ void Swap(int[,] a) // reference-ccылка
         for (int j = 0; j < a.GetLength(1); j++)
         {
             int temp = a[0, j];
-            a[0, j] = a[4, j];
-            a[4, j] = temp;
+            a[0, j] = a[a.GetLength(0)-1, j];
+            a[a.GetLength(0)-1, j] = temp;
         }
 }
 
