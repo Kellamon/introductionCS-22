@@ -16,7 +16,8 @@ for (int rows = 0; rows < 2; rows++)
 }*/
 
 // 2 пример
-/*int[,] matrix = new int[3,4];
+/*
+int[,] matrix = new int[3,4];
                             //обращение к первому значению массив[3]
 for (int i = 0; i < matrix.GetLength(0); i++) 
 
