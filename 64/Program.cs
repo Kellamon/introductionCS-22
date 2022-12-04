@@ -1,5 +1,16 @@
 ﻿// 64. В двумерном массиве заменить элементы, у которых оба индекса чётные на их квадраты по значению.
 
+void FillArray(double[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            matr[i,j]=new Random().Next(1,10);// [1;10]
+        }
+    }
+}
+
 void PrintArray(double[,] matr)
 {
         //обращение к первому значению массив[3]
@@ -15,16 +26,7 @@ void PrintArray(double[,] matr)
     }
 }
 
-void FillArray(double[,] matr)
-{
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            matr[i,j]=new Random().Next(1,10);// [1;10]
-        }
-    }
-}
+
 double[,] matrix = new double[3, 4];
 FillArray(matrix);
 PrintArray(matrix);
